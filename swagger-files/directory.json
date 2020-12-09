@@ -1,12 +1,4 @@
 {
-  "__shipwell.json": {
-    "preferred": "2.5.371",
-    "versions": {
-      "2.5.371": {
-        "swaggerUrl": "swagger-files/__shipwell.json"
-      }
-    }
-  },
   "additional-properties.json": {
     "preferred": "1.0.0",
     "versions": {
