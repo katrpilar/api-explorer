@@ -119,6 +119,14 @@
       }
     }
   },
+  "manual-api-logitech.json": {
+    "preferred": "manual",
+    "versions": {
+      "manual": {
+        "swaggerUrl": "swagger-files/manual-api-logitech.json"
+      }
+    }
+  },
   "multiple-media-types.json": {
     "preferred": "1.0",
     "versions": {
@@ -132,6 +140,38 @@
     "versions": {
       "1.0.0": {
         "swaggerUrl": "swagger-files/multiple-securities.json"
+      }
+    }
+  },
+  "parameter-styles-cookie.json": {
+    "preferred": "1.0.0",
+    "versions": {
+      "1.0.0": {
+        "swaggerUrl": "swagger-files/parameter-styles-cookie.json"
+      }
+    }
+  },
+  "parameter-styles-headers.json": {
+    "preferred": "1.0.0",
+    "versions": {
+      "1.0.0": {
+        "swaggerUrl": "swagger-files/parameter-styles-headers.json"
+      }
+    }
+  },
+  "parameter-styles-path.json": {
+    "preferred": "1.0.0",
+    "versions": {
+      "1.0.0": {
+        "swaggerUrl": "swagger-files/parameter-styles-path.json"
+      }
+    }
+  },
+  "parameter-styles-query.json": {
+    "preferred": "1.0.0",
+    "versions": {
+      "1.0.0": {
+        "swaggerUrl": "swagger-files/parameter-styles-query.json"
       }
     }
   },
