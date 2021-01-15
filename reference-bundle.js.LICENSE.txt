@@ -53,8 +53,6 @@ object-assign
 
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 
-/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
 /**
  * @license https://raw.githubusercontent.com/node-fetch/node-fetch/master/LICENSE.md
  *
@@ -140,4 +138,4 @@ object-assign
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license URI.js v4.4.0 (c) 2011 Gary Court. License: http://github.com/garycourt/uri-js */
+/** @license URI.js v4.2.1 (c) 2011 Gary Court. License: http://github.com/garycourt/uri-js */
