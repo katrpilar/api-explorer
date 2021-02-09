@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: 'production',
@@ -14,13 +15,13 @@ module.exports = {
     libraryTarget: 'umd',
   },
   plugins: [
+    new BundleAnalyzerPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
       },
     }),
   ],
-  devtool: 'source-map',
   externals: {
     react: {
       root: 'React',
@@ -39,12 +40,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['babel-loader'],
-        exclude: [
-          path.join(__dirname, 'node_modules', 'core-js'),
-          path.join(__dirname, 'node_modules', 'babel-runtime'),
-        ],
+        test: /\.js(x?)$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            extends: '../../.babelrc',
+          },
+        },
       },
     ],
   },
