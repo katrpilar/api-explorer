@@ -49,20 +49,12 @@ function BaseInput(props) {
     inputProps.step = schema.multipleOf;
   }
 
-  if (typeof schema.minimum !== 'undefined') {
-    inputProps.min = schema.minimum;
-  }
-
-  if (typeof schema.maximum !== 'undefined') {
-    inputProps.max = schema.maximum;
-  }
-
-  if (typeof schema.minLength !== 'undefined') {
-    inputProps.minLength = schema.minLength;
-  }
-
-  if (typeof schema.maxLength !== 'undefined') {
-    inputProps.maxLength = schema.maxLength;
+  const supplementaryProps = ['minimum', 'maximum', 'minLength', 'maxLength', 'pattern'];
+  for (let i = 0; i < supplementaryProps.length; i += 1) {
+    const prop = supplementaryProps[i];
+    if (prop in schema) {
+      inputProps[prop] = schema[prop];
+    }
   }
 
   const _onChange = ({ target: { value } }) => {
