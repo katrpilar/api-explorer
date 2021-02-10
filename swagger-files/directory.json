@@ -127,6 +127,14 @@
       }
     }
   },
+  "manual-api-missingInOas.json": {
+    "preferred": "manual",
+    "versions": {
+      "manual": {
+        "swaggerUrl": "swagger-files/manual-api-missingInOas.json"
+      }
+    }
+  },
   "multiple-media-types.json": {
     "preferred": "1.0",
     "versions": {
